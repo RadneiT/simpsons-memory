@@ -1,0 +1,119 @@
+
+
+:root {
+   --pink: #ed5aa0;
+   --light-pink: #f27bb4;
+   --font-color: #252525; 
+   --button-font: #ffffff;
+}
+
+body {
+    background: #fed420;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    color: var(--font-color);
+}
+
+main {
+    max-width: 730px;
+    width: 90%;
+    margin: 100px auto 50px;
+    display: flex;
+    align-items: center;
+}
+
+.section1 {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0 10px 10px 10px;
+    border-radius: 8px;
+}
+
+h1 {text-align: center;}
+
+button {
+    height: 100px;
+    width: 100px;
+    border: none;
+}
+
+button:hover {cursor: pointer;}
+
+.section2 {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    width: 250px;
+    height: 520px;
+    padding: 20px 20px;
+}
+
+.difficult {
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--pink);
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all .3s ease;
+    box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+    color: var(--button-font);
+    height: 70px;
+    width: 80px;
+}
+
+#reset {
+    height: 50px;
+    width: 250px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--pink);
+    letter-spacing: 1.5px;
+    transition: all .3 ease;
+    box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+    color: var(--button-font);
+}
+
+
+.difficult:hover, #reset:hover {
+    box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+}
+
+.difficult:active, #reset:active {
+ background-color: rgb(237, 90, 160);
+ box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+ transform: translateY(5px);
+ transition: 200ms;
+}
+
+
+.difficult:disabled, #reset:disabled {
+    background-color: var(--light-pink);
+    box-shadow: rgb(186, 90, 104) 0px 7px 0px 0px;
+
+}
+
+.stats {
+    border: 1px solid var(--button-font);
+    height: 105px;
+    border-radius: 8px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+}
+
+img {width: 80%;}
+
+@media (max-width: 600px) {
+    main {
+     display: flex;
+     flex-wrap: wrap;
+    }
+
+    .section2 {
+        width: 400px;
+        height: 450px;
+    }
+
+    .stats {
+     height: 80px;
+    }
+ }
